@@ -29,7 +29,7 @@ function showCoins() {
         image.src = `${selectedCoin}.png`
         box.appendChild(image)
 
-        centsValue -= selectedCoin
+        centsValue = centsValue - selectedCoin
       }
     }
   }
