@@ -13,13 +13,10 @@ function showCoins() {
     if (centsValue > 99) {
       box.innerHTML = `Number of cents cannot be more than 99.`
     }
-    else if (centsValue != Math.floor(centsValue)) {
-      box.innerHTML = `Number of cents must be an integer.`
-    }
     else {
       box.innerHTML = ``
 
-      while (centsValue > 0) {
+      while (centsValue >= 1) {
         let selectedCoin
         
         for (let coin of coins) {
